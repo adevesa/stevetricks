@@ -1,19 +1,29 @@
 #### SpeechRecognizerFiles.py
 ##
-## Debemos poner el path a la hora de ejecutar el script
-## La carpeta SOLO debe contener los audios en formato .FLAC
+## Primero que nada se necesita Python. Con la versión 3.6.5 32 bits esta funcionando, con las otras versiones se desconoce.
+##
+## Debemos poner el path a la hora de ejecutar el script. Se cambia desde un editor cualquiera.
+## La carpeta SOLO debe contener los audios en formato .FLAC (estos se pueden modificar desde batch processing de GoldWave)
 ## Utiliza el CloudRecognizer de Google por lo tanto, si no anda es posible que haya vencido el plazo gratuito
 ##
-## Tambien necesita pip install SpeechRecognizer
+## Tambien necesita 
+## pip install SpeechRecognizer
 ## pip install google-cloud speech
 ## pip install pyaudio
 ## pip3 install google-api-python-client
 ## 
+## se ejecuta de la siguiente forma
+## python speechRecognizer.py
+## >> Muestra en consola todos los resultados.
+## python speechRecognizer.py >> resultados.txt
+## >> Guarda en un archivo los resultados para luego visualizarlos.
 ##
+##
+## Certius Tech 2018. adevesa.
 ###
 
 
-
+# Acá se setea el path.
 path = "C:\\Users\\adevesa\\Documents\\PRUEBAX\\"
 
 from os import listdir
